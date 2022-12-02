@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap');
+
+// utilities
+$primary1: linear-gradient(hsl(249, 99%, 64%), hsl(278, 94%, 30%)); 
+$primary-2:hsl(0, 100%, 66%); 
+
+$neutral1: hsl(0, 0%, 100%);
+$neutral2: hsl(270, 3%, 87%);
+$neutral3: hsl(279, 6%, 55%);
+$neutral4: hsl(278, 68%, 11%);
+
+
+//Reset
+
+* {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+// Global edit
+
+body {
+    background: $primary1;
+    height: 100%;
+    font-family: 'Space Grotesk', sans-serif;
+    color: var($neutral2);
+    font-size: 1rem;
+    font-weight: 500;
+}
