@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap');
 
 // utilities
-$primary1: linear-gradient(hsl(249, 99%, 64%), hsl(278, 94%, 30%)); 
+$primary1: linear-gradient(to left,hsl(249, 99%, 64%), hsl(278, 94%, 30%)); 
 $primary-2:hsl(0, 100%, 66%); 
 
 $neutral1: hsl(0, 0%, 100%);
@@ -13,7 +13,6 @@ $neutral4: hsl(278, 68%, 11%);
 //Reset
 
 * {
-    height: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -23,10 +22,108 @@ $neutral4: hsl(278, 68%, 11%);
 // Global edit
 
 body {
-    background: $primary1;
-    height: 100%;
+    background: $neutral2;
     font-family: 'Space Grotesk', sans-serif;
     color: var($neutral2);
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 500;
 }
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 100vh;
+    
+}
+
+.credit_card {
+    background: url("/images/bg-main-desktop.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+
+
+    .cc_front {
+        position: absolute;
+        z-index: 1;
+        top: 20%;
+        left: 15%;
+    }
+
+    .cc_front_content {
+        position: absolute;
+
+        img {
+            display: block;
+        }
+    }
+
+    .cc_container {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: 40px;
+        color: $neutral2;
+
+        p {
+            padding-bottom: 20px;
+        }
+
+        .cc_holder {
+            display: flex;
+            justify-content: space-between;
+
+            p {
+                text-align: center;
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .cc_back {
+        position: absolute;
+        top: 50%;
+        left: 20%;
+
+
+        .cc_back_content {
+            position: absolute;
+            
+        }
+        .img {
+            position: absolute;
+            display: block;
+        }
+        .cc_pin {
+            position: absolute;
+            top: 42%;
+            left: 70%;
+            color: $neutral2;
+            font-size: 1.5rem;
+        }
+    }
+
+}
+
+.credit_card_form {
+    background-color: $neutral1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -9,33 +9,51 @@
   <title>Interactive card form</title>
 </head>
 <body>
+  <main class="main">
 
-  0000 0000 0000 0000
-  Jane Appleseed
-  00/00
+    <!-- credit card components -->
+    
+     <section class="credit_card">
+        <div class="cc_front">
 
-  000
-
-  Cardholder Name
-  e.g. Jane Appleseed
-
-  Card Number
-  e.g. 1234 5678 9123 0000
-
-  Exp. Date (MM/YY)
-  MM
-  YY
-
-  CVC
-  e.g. 123
-
-  Confirm
-
-  <!-- Completed state start -->
-
-  Thank you!
-  We've added your card details
-  Continue
+          <div class="cc_front_content">
+            <img src="./images/bg-card-front.png" alt="credit card front">
+            <div class="cc_container">
+              <div class="cc_logo">
+                <img src="./images/card-logo.svg" alt="card icon">
+              </div>
   
+              <div class="cc_data">
+                <p>0000 0000 0000 0000</p>
+                <div class="cc_holder">
+                  <p>Ochuko Angozi</p>
+                  <p>
+                    <span class="data_name">00</span>
+                    <span class="data_date">00</span></p>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+
+        <div class="cc_back">
+          <div class="cc_back_content">
+            <img src="./images/bg-card-back.png" alt="">
+            <p class="cc_pin">000</p>
+          </div>
+          
+        </div>
+     </section>
+
+    <!--  credit card form -->
+
+     <section class="credit_card_form">
+      <form action="">
+        <label for=""></label>
+      </form>
+    </section>
+
+
+  </main>
 </body>
 </html>

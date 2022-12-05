@@ -1,16 +1,83 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap");
 * {
-  height: 100%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  background: linear-gradient(hsl(249deg, 99%, 64%), hsl(278deg, 94%, 30%));
-  height: 100%;
+  background: hsl(270deg, 3%, 87%);
   font-family: "Space Grotesk", sans-serif;
   color: var(hsl(270deg, 3%, 87%));
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: 500;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 100vh;
+}
+
+.credit_card {
+  background: url("/images/bg-main-desktop.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+.credit_card .cc_front {
+  position: absolute;
+  z-index: 1;
+  top: 20%;
+  left: 15%;
+}
+.credit_card .cc_front_content {
+  position: absolute;
+}
+.credit_card .cc_front_content img {
+  display: block;
+}
+.credit_card .cc_container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 40px;
+  color: hsl(270deg, 3%, 87%);
+}
+.credit_card .cc_container p {
+  padding-bottom: 20px;
+}
+.credit_card .cc_container .cc_holder {
+  display: flex;
+  justify-content: space-between;
+}
+.credit_card .cc_container .cc_holder p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+.credit_card .cc_back {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+}
+.credit_card .cc_back .cc_back_content {
+  position: absolute;
+}
+.credit_card .cc_back .img {
+  position: absolute;
+  display: block;
+}
+.credit_card .cc_back .cc_pin {
+  position: absolute;
+  top: 42%;
+  left: 70%;
+  color: hsl(270deg, 3%, 87%);
+  font-size: 1.5rem;
+}
+
+.credit_card_form {
+  background-color: hsl(0deg, 0%, 100%);
 }/*# sourceMappingURL=style.css.map */
