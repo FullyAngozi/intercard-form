@@ -9,8 +9,11 @@ body {
   background: hsl(270deg, 3%, 87%);
   font-family: "Space Grotesk", sans-serif;
   color: var(hsl(270deg, 3%, 87%));
-  font-size: 2rem;
   font-weight: 500;
+}
+
+img {
+  width: 300px;
 }
 
 main {
@@ -39,24 +42,29 @@ main {
 }
 .credit_card .cc_container {
   position: absolute;
+  max-width: 100%;
+  display: grid;
+  align-items: center;
   top: 0;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding-left: 40px;
+  padding-left: 20px;
   color: hsl(270deg, 3%, 87%);
+}
+.credit_card .cc_container .cc_logo img {
+  width: 50px;
 }
 .credit_card .cc_container p {
   padding-bottom: 20px;
+  font-size: 1.5rem;
 }
 .credit_card .cc_container .cc_holder {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 }
 .credit_card .cc_container .cc_holder p {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .credit_card .cc_back {
   position: absolute;
@@ -75,9 +83,55 @@ main {
   top: 42%;
   left: 70%;
   color: hsl(270deg, 3%, 87%);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .credit_card_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: hsl(0deg, 0%, 100%);
+}
+
+.form {
+  max-width: 600px;
+}
+.form .label {
+  font-size: 1.2rem;
+  color: hsl(278deg, 68%, 11%);
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+.form .error_msg {
+  font-size: 1rem;
+  color: hsl(0deg, 100%, 66%);
+  visibility: hidden;
+}
+.form input {
+  font-size: 1rem;
+  padding: 1rem;
+  border: 2px solid hsl(279deg, 6%, 55%);
+  border-radius: 0.5rem;
+}
+.form .form_wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.form .form_dates {
+  display: flex;
+}
+.form .form_dates input {
+  max-width: 100px;
+}
+.form .form_dates .card_exp {
+  display: flex;
+  gap: 1rem;
+}
+.form .btn {
+  padding: 1rem;
+  width: 100%;
+  background-color: hsl(278deg, 68%, 11%);
+  color: hsl(0deg, 0%, 100%);
+  border-radius: 0.5rem;
 }/*# sourceMappingURL=style.css.map */

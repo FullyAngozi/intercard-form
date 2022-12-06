@@ -1,59 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="./app.js"></script>
-  <link rel="stylesheet" href="/dist/css/style.css">
-  <title>Interactive card form</title>
-</head>
-<body>
-  <main class="main">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./app.js"></script>
+    <link rel="stylesheet" href="/dist/css/style.css" />
+    <title>Interactive card form</title>
+  </head>
+  <body>
+    <main class="main">
+      <!-- credit card components -->
 
-    <!-- credit card components -->
-    
-     <section class="credit_card">
+      <section class="credit_card">
         <div class="cc_front">
-
           <div class="cc_front_content">
-            <img src="./images/bg-card-front.png" alt="credit card front">
+            <img src="./images/bg-card-front.png" alt="credit card front" />
             <div class="cc_container">
               <div class="cc_logo">
-                <img src="./images/card-logo.svg" alt="card icon">
+                <img src="./images/card-logo.svg" alt="card icon" />
               </div>
-  
+
               <div class="cc_data">
                 <p>0000 0000 0000 0000</p>
                 <div class="cc_holder">
                   <p>Ochuko Angozi</p>
                   <p>
                     <span class="data_name">00</span>
-                    <span class="data_date">00</span></p>
+                    <span class="data_date">00</span>
+                  </p>
                 </div>
               </div>
             </div>
-          </div>  
+          </div>
         </div>
 
         <div class="cc_back">
           <div class="cc_back_content">
-            <img src="./images/bg-card-back.png" alt="">
+            <img src="./images/bg-card-back.png" alt="" />
             <p class="cc_pin">000</p>
           </div>
-          
         </div>
-     </section>
+      </section>
 
-    <!--  credit card form -->
+      <!--  credit card form -->
 
-     <section class="credit_card_form">
-      <form action="">
-        <label for=""></label>
-      </form>
-    </section>
+      <section class="credit_card_form">
+        <form class="form">
+          <div class="form_wrapper">
+            <label class="label">cardholder name</label>
+            <input
+              type="text"
+              class="cardholder_name"
+              placeholder="e.g. Ochuko Angozi"
+            />
+            <p class="error_msg">error</p>
+          </div>
+          <div class="form_wrapper">
+            <label class="label" for="">card number</label>
+            <input
+              inputmode="numeric"
+              class="card_number"
+              placeholder="e.g.1234 5678 9123 7893"
+            />
+            <p class="error_msg">Wrong format, numbers only</p>
+          </div>
 
+          <div class="form_dates">
+            <div class="form_wrapper">
+              <label class="label">Exp. date (mm/yy)</label>
+              <div class="card_exp">
+                <input inputmode="numeric" placeholder="MM" />
+                <input inputmode="numeric" placeholder="YY" />
+              </div>
+              <p class="error_msg">Can't be blank</p>
+            </div>
 
-  </main>
-</body>
+            <div class="form_wrapper">
+              <label class="label">CVC</label>
+              <input type="text" class="cvc" placeholder="e.g. 123" />
+              <p class="error_msg">Can't be blank</p>
+            </div>
+          </div>
+          <button class="btn sumbit_btn">Confirm</button>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>
