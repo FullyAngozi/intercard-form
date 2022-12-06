@@ -1,0 +1,21 @@
+.credit_card_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form .label {
+  font-size: 1.2rem;
+  color: hsl(278deg, 68%, 11%);
+}
+.form input {
+  font-size: 1.5rem;
+}
+.form .form_wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.form .form_dates {
+  display: flex;
+}/*# sourceMappingURL=form.module.css.map */
