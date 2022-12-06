@@ -27,12 +27,13 @@ main {
   background-size: cover;
   background-position: center;
   width: 100%;
+  position: relative;
 }
 .credit_card .cc_front {
   position: absolute;
   z-index: 1;
   top: 20%;
-  left: 15%;
+  left: 50%;
 }
 .credit_card .cc_front_content {
   position: absolute;
@@ -69,7 +70,7 @@ main {
 .credit_card .cc_back {
   position: absolute;
   top: 50%;
-  left: 20%;
+  left: 60%;
 }
 .credit_card .cc_back .cc_back_content {
   position: absolute;
@@ -133,5 +134,63 @@ main {
   width: 100%;
   background-color: hsl(278deg, 68%, 11%);
   color: hsl(0deg, 0%, 100%);
+  border-color: transparent;
   border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 1080px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+  }
+  .credit_card {
+    position: relative;
+  }
+  .credit_card .cc_front {
+    position: relative;
+    top: 10%;
+    left: 10%;
+  }
+  .credit_card .cc_back {
+    position: relative;
+    top: 10%;
+    right: 20%;
+  }
+  .credit_card_form {
+    padding-top: 70px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .credit_card {
+    position: relative;
+  }
+  .credit_card .cc_back {
+    align-self: center;
+    position: absolute;
+    top: 0px;
+    left: 150px;
+    padding: 10px;
+  }
+  .credit_card .cc_front {
+    position: relative;
+    top: 70px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .credit_card {
+    position: relative;
+  }
+  .credit_card .cc_back {
+    position: relative;
+    align-self: center;
+    top: 0px;
+    left: 20%;
+    padding: 10px;
+  }
+  .credit_card .cc_front {
+    position: absolute;
+    top: 80px;
+    left: 10px;
+  }
 }/*# sourceMappingURL=style.css.map */

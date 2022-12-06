@@ -50,13 +50,14 @@ main {
     background-size: cover;
     background-position: center;
     width: 100%;
+    position: relative;
 
 
     .cc_front {
         position: absolute;
         z-index: 1;
         top: 20%;
-        left: 15%;
+        left: 50%;
 
     }
 
@@ -110,7 +111,7 @@ main {
     .cc_back {
         position: absolute;
         top: 50%;
-        left: 20%;
+        left: 60%;
     
 
 
@@ -187,10 +188,97 @@ main {
         width: 100%;
         background-color: $neutral4;
         color: $neutral1;
+        border-color: transparent;
         border-radius: .5rem;
     }
 
 }
+
+// media queries
+
+@media screen and (max-width: 1080px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        overflow: hidden;
+    }
+
+    .credit_card {
+        position: relative;
+
+        
+
+        .cc_front {
+            position: relative;
+            top: 10%;
+            left: 10%;
+        }
+        .cc_back {
+            position: relative;
+            top: 10%;
+            right: 20%;
+        }
+    }
+
+    .credit_card_form {
+        padding-top: 70px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .credit_card {
+        position: relative;
+    
+
+        .cc_back {
+            align-self: center;
+            position: absolute;
+            top: 0px;
+            left: 150px;
+            padding: 10px;
+        }
+
+        .cc_front {
+            position: relative;
+            top: 70px;
+            
+            
+        }
+    }
+
+    
+
+}
+
+@media screen and (max-width: 480px) {
+    .credit_card {
+        position: relative;
+    
+
+        .cc_back {
+            position: relative;
+            align-self: center;
+            top: 0px;
+            left: 20%;
+            padding: 10px;
+        }
+
+        .cc_front {
+            position: absolute;
+            top: 80px;
+            left: 10px;
+            
+            
+        }
+    }
+
+    
+
+    
+
+}
+
 
 
 
