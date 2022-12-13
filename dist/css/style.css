@@ -138,6 +138,40 @@ main {
   border-radius: 0.5rem;
 }
 
+.completed_section {
+  display: grid;
+  place-items: center;
+  background-color: hsl(0deg, 0%, 100%);
+  display: none;
+}
+.completed_section .completed_wrapper {
+  text-align: center;
+}
+.completed_section .completed_wrapper h3 {
+  font-size: 2rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: hsl(278deg, 68%, 11%);
+}
+.completed_section .completed_wrapper p {
+  font-size: 1.3rem;
+  padding: 1rem;
+  font-weight: 400;
+  color: hsl(279deg, 6%, 55%);
+}
+.completed_section .completed_wrapper button {
+  margin-top: 1rem;
+  padding: 10px 100px;
+  border-radius: 10px;
+  border: none;
+  background-color: hsl(278deg, 68%, 11%);
+  color: hsl(0deg, 0%, 100%);
+}
+.completed_section .completed_wrapper img {
+  max-width: 80px;
+  padding: 1rem;
+}
+
 @media screen and (max-width: 1080px) {
   main {
     display: grid;

@@ -12,7 +12,6 @@ $neutral1: hsl(0, 0%, 100%);
 $neutral2: hsl(270, 3%, 87%);
 $neutral3: hsl(279, 6%, 55%);
 $neutral4: hsl(278, 68%, 11%);
-$neutral5: hsl(277, 100%, 5%);
 
 
 
@@ -139,6 +138,7 @@ main {
     justify-content: center;
     align-items: center;
     background-color: $neutral1;
+    
 }
 
 .form {
@@ -192,6 +192,56 @@ main {
         border-radius: .5rem;
     }
 
+}
+
+
+.completed_section {
+    display: grid;
+    place-items: center;
+    background-color: $neutral1;
+    display: none;
+
+
+    .completed_wrapper {
+        text-align: center;
+
+        h3 {
+            font-size: 2rem;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            color: $neutral4;
+
+        }
+
+        p {
+            font-size: 1.3rem;
+            padding: 1rem;
+            font-weight: 400;
+            color: $neutral3;
+
+        }
+
+        button {
+            margin-top: 1rem;
+            padding: 10px 100px;
+            border-radius: 10px;
+            border: none;
+            background-color: $neutral4;
+            color: $neutral1;
+        }
+
+        
+       
+
+
+        img {
+            max-width: 80px;
+            padding: 1rem;
+        }
+
+    }
+
+    
 }
 
 // media queries
@@ -272,11 +322,6 @@ main {
             
         }
     }
-
-    
-
-    
-
 }
 
 

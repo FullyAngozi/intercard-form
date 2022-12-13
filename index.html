@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="./app.js"></script>
+    <script src="./app.js" type="module" defer></script>
     <link rel="stylesheet" href="/dist/css/style.css" />
     <title>Interactive card form</title>
   </head>
@@ -24,7 +24,7 @@
               <div class="cc_data">
                 <p>0000 0000 0000 0000</p>
                 <div class="cc_holder">
-                  <p>Ochuko Angozi</p>
+                  <p id="data_cardname">Ochuko Angozi</p>
                   <p>
                     <span class="data_name">00</span>
                     <span class="data_date">00</span>
@@ -57,7 +57,7 @@
             <p class="error_msg">error</p>
           </div>
           <div class="form_wrapper">
-            <label class="label" for="">card number</label>
+            <label class="label">card number</label>
             <input
               inputmode="numeric"
               class="card_number"
@@ -82,8 +82,20 @@
               <p class="error_msg">Can't be blank</p>
             </div>
           </div>
-          <button class="btn sumbit_btn">Confirm</button>
+          <button type="submit" class="btn">Confirm</button>
         </form>
+      </section>
+
+      <!-- Thank you section -->
+
+      <section class="completed_section">
+        <div class="completed_wrapper">
+          <img src="./images/icon-complete.svg" alt="">
+          <h3>Thank you!</h3>
+          <p>we've added your card details</p>
+          <button>Continue</button>
+        </div>
+
       </section>
     </main>
   </body>
